@@ -1,46 +1,41 @@
 <!DOCTYPE html>
+
+<html lang="en">
 <head>
-
-<title>IMC</title>
-
-<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
 </head>
-
 <body>
     <div id="cabecera"></div>
-<h1>tarea JS funciones</h1>
-<div style="color:blue;" id ="pulsador">  <button onclick="">Probando IMC</button></div>
-<script type="text/javascript">
+    <h1>tarea JS funciones</h1>
+    <div style="color:blue;" id ="pulsador">  <button></button></div>
+    <script type="text/javascript">
+        
     
+        function resultdivision () {
     
-function resulmulti (altura, peso)   { 
-    let resulmulti = altura * altura
-    console.log(resultmulti)
-     
-    nombre = prompt("Cual es tu nombre: ");
-    peso = prompt("Cual es tu peso: ");
-    altura = prompt ("Cual es tu altura");
- } 
- 
- function resultdivision (peso, resulmulti) {
-    let resultdivision = peso/resulmulti
-    document.write(resultdivision)
- }
-
-let fraseCompleta = nombre + "y tu IMC es de" + resultdivision + "por lo que " + "";
-            console.log(fraseCompleta);
+            let nombre = prompt("Cual es tu nombre?:");
+            let peso = prompt("Cual es tu peso?: ");
+            let altura = prompt ("Cual es tu altura?:");
+            let resultdivision = peso/ (altura * altura);
+        document.getElementById ("resultdivision").innerHTML = fraseCompleta;
+    
+    let fraseCompleta = nombre + "y tu IMC es de" + resultdivision + "por lo que " + "";
+            console.log=fraseCompleta;  
             alert(fraseCompleta);
 
-if ( resultdivision < 18,5) {
-    document.write=fraseCompleta + "estas por debajo del rango normal";
-}
-else if (resultdivision 18,5 && 24,5) {
-    document.write=fraseCompleta + "estas dentro del rango normal";
-} 
-else () {
-    document.write=fraseCompleta + "estas por encima del rango normal o con sobrepeso";
-}
-</script>
+    if ( resultdivision  > 18.5) {
+        document.write=fraseCompleta + "estas por debajo del rango normal";
+    }
+    else if (resultdivision >= 18.5 && resultdivision <= 24.5) {
+        document.write=fraseCompleta + "estas dentro del rango normal";
+    } 
+    else {
+        document.write=fraseCompleta + "estas por encima del rango normal o con sobrepeso";
+    }
+        }
+    </script>   
 </body>
-
 </html>
