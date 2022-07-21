@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-
 <head>
 
 <title>IMC</title>
 
 <meta charset="utf-8">
-
 </head>
 
 <body>
     <div id="cabecera"></div>
-
-<div style="color:blue;" id ="pulsador"> Probando IMC </div>
+<h1>tarea JS funciones</h1>
+<div style="color:blue;" id ="pulsador">  <button onclick="">Probando IMC</button></div>
 <script type="text/javascript">
     
     
-        nombre1 = prompt("Cual es tu nombre: ");
-        peso = prompt("Cual es tu peso: ");
-        altura = prompt ("Cual es tu altura");
-    function (){  
-    let fraseCompleta = nombre1 + "y tu IMC es de" + resultdivision + "por lo que " + "";
-                console.log(fraseCompleta);
-                alert(fraseCompleta);
-            }
-    function IMC ()   {   
-            let resulmulti = altura * altura
-            let resultdivision = peso/resulmulti
-            console.log(resultdivision)
-            }
-    
-    if (resultdivision > 18,5) {
-        document.write: "estas por debajo del rango normal"
-    }
-    else if (resultdivision > 18,5 && <24,5) {
-        document.write: "estas dentro del rango normal"
-    } 
-    else (resultdivision <24,5) {
-        document.write: "estas por encima del rango normal o con sobrepeso"
-    }
-    </script>
-    
+function resulmulti (altura, peso)   { 
+    let resulmulti = altura * altura
+    console.log(resultmulti)
+     
+    nombre = prompt("Cual es tu nombre: ");
+    peso = prompt("Cual es tu peso: ");
+    altura = prompt ("Cual es tu altura");
+ } 
+ 
+ function resultdivision (peso, resulmulti) {
+    let resultdivision = peso/resulmulti
+    document.write(resultdivision)
+ }
+
+let fraseCompleta = nombre + "y tu IMC es de" + resultdivision + "por lo que " + "";
+            console.log(fraseCompleta);
+            alert(fraseCompleta);
+
+if ( resultdivision < 18,5) {
+    document.write=fraseCompleta + "estas por debajo del rango normal";
+}
+else if (resultdivision 18,5 && 24,5) {
+    document.write=fraseCompleta + "estas dentro del rango normal";
+} 
+else () {
+    document.write=fraseCompleta + "estas por encima del rango normal o con sobrepeso";
+}
+</script>
 </body>
 
 </html>
